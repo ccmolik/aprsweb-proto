@@ -11,7 +11,7 @@ Follow the [Twirp Installation Guide](https://twitchtv.github.io/twirp/docs/inst
 Make changes to `rpc/aprsweb/aprsweb.proto` and build the artifacts from the root of this directory as follows:
 
 ```
-protoc --proto_path=. --twirp_out=. --go_out=. .\rpc\aprsweb\aprsweb.proto
+protoc --proto_path=. --twirp_out=. --go_out=. ./rpc/aprsweb/aprsweb.proto
 ```
 ## Why include the artifacts and not just the proto files?
 Few people want to set up the `protoc` and `protoc-gen-*` packages you need to build these schemas on embedded devices (raspis.)
